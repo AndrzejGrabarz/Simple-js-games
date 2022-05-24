@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+}
+
+html {
+    margin-left: 100px;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-image: url(images/oaza.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: left;
+    background-position-y: bottom;
+    background-size: cover;
+   
+}
+
+#grid{
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#grid_Level_2{
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 400px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+    min-height: 1000px;
+    margin: 50px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+
+#grid img , #grid_Level_2 img {
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    
+}
+
+img {
+    transition: transform .2s;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+
+h1,h2,h3,span {
+    text-align: center;
+    font-family: consolas,monospace;
+}
+
+#check{
+    display:none;
+    width: 400px;
+    height: 380px;
+    
+}
+
+/* .green{
+    background-color:rgb(106, 215, 106);
+} */
+
+.podział {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    
+}
+
