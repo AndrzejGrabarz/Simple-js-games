@@ -9,22 +9,47 @@
 </head>
 <body>
     <h1>Blackjack</h1>
-    <p id="message-el">Want to play a round?</p>
-    <p id="cards-el">Cards:</p>
-    <p id="sum-el">Sum:</p>
+    
+    <div class="container left">
+        <p id="message-el">Want to play a round?</p>
+        <p id="cards-el">Cards:</p>
+        <p id="sum-el">Sum:</p>
+
+        <div class="btn">
+
+            <button id="new-card" onclick = newCard_1()> NEW CARD </button>
+            <br>
+            <button onclick = pass_1()> PASS</button>
+
+        </div>
+
+    </div>
+
+    <div class="container right">
+
+        <p id="message-el_2">Want to play a round?</p>
+        <p id="cards-el_2">Cards:</p>
+        <p id="sum-el_2">Sum:</p>
+
+            <div class="btn">
+
+                <button id="new-card" onclick = newCard_2()> NEW CARD </button>
+                <br>
+                <button onclick = pass_2()> PASS</button>
+
+            </div>
+    </div>
     
     <div class="btn">
     <button id="start-btn" onclick = startGame()>START GAME</button>
     <br>
-    <button id="new-card" onclick = newCard()> NEW CARD </button>
-    <br>
     <button onclick = cleanTable()> CLEAN TABLE  </button>
-    <br>
-    <button onclick = pass()> PASS</button>
     </div>
 
-    <p id="player-el">Per: </p>
+    <div class="container right"><p id="player-el_1"></p></div>
+    <div class="container left"><p id="player-el_2"></p></div>
     <!-- Drugi gracz -->
     <script src="rozdanie.js"></script>
 </body>
 </html>
+
