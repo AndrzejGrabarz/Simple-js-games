@@ -8,18 +8,34 @@ body {
     background-image: url(Images/green_1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 100vh;
-    
-    
+    min-height: 100vh;  
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+}
+
+h1{
+    text-align: center;
+    font-size:3rem;
+    color: rgb(211, 233, 17);
+    margin-top: 20px;
 }
 
 h2 {
     color: white;
+    text-align: center;
+    margin: 20px;
+    padding:5px;
 }
+
+span {
+   text-align: center;
+    
+}
+
 
 img {
     height: 300px;
     width: 200px;
+    padding:5px
 }
 
 .container {
@@ -27,5 +43,24 @@ img {
     justify-content:center;
     align-items:center;
     flex-direction: column;
-    margin: 20px;
+    margin: 40px 40px;
+    position: relative;
 }
+
+.lewo {
+    align-items:left;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding:10px;
+    margin: 10px;
+    color: white;
+    border-radius:0.3em;
+    font-family: consolas,monospace; 
+    font-size: 2rem; 
+    width: 200px;  
+    font-weight: bold;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #3bbc9a, #32b78c, #2db27e, #2bad6f, #2ca85f, #39a956, #44a94d, #4fa943, #63af3f, #75b43a, #88b936, #9abe32);

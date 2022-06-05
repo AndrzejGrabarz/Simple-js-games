@@ -9,24 +9,47 @@
 </head>
 <body>
 
-    <div class="container">
+   <h1>Black Jack</h1>
+   
+        <div class="container">
 
-        <h2>Dealer: <span id="dealer-sum"></span></h2>
-            <div id="dealer-cards">
-                <img src="./Cards/10-C.png" alt="">
-            </div>
+
+                <div>
+
+                    <h2>Dealer: <span id="dealer-sum"></span></h2>
+                
+                    <div id="dealer-cards"> </div>
+                            
+                </div>
+
+                <br>
+
+                <div>
+ 
+                    <h2>You: <span id="your-sum"></span></h2>
+                    
+                    <div id="your-cards"></div>
+                
+                </div>
+
+                       
+        </div>
+    
+     
+        <div class="container">
             
-        <h2>You: <span id="your-sum"></span></h2>
-            <div id="your-cards">
-                <img src="./Cards/7-C.png" alt="">
-            </div>
-        <br>
+            <button  id="start-btn">START</button>
+            <button  id="reset-btn">RESET</button>
+            <button  id="hit">HIT</button>
+            <button  id="stay">STAY</button>
+            <p id="results"></p>   
 
-        <button  id="hit">Hit</button>
-        <button  id="stay">Stay</button>
-        <p id="results"></p>
+        </div>  
+    
 
-    </div>
+    <!-- <button  id="hit">Hit</button>
+    <button  id="stay">Stay</button>
+    <p id="results"></p> -->
 
     <script src="rules.js"></script>
 </body>
