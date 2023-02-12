@@ -1,0 +1,39 @@
+import { onSnake, expandSnake,onBarrier } from './snake.js'
+import {randomGridPosition} from './grid.js'
+
+let food = getRandomFoodPosition()
+
+const EXPANSION_RATE = 1;
+
+export function update() {
+    if (onSnake(food)) {
+      expandSnake(EXPANSION_RATE)
+    food = getRandomFoodPosition()
+    
+ }
+}
+
+export function draw(gameBoard) {
+    
+    
+    const foodElement = document.createElement('div')
+    foodElement.style.gridRowStart = food.y
+    foodElement.style.gridColumnStart = food.x
+    foodElement.classList.add('food-2')
+    gameBoard.appendChild(foodElement)
+    
+  
+  }
+
+
+function getRandomFoodPosition(){
+    let newFoodPosition 
+
+    while(newFoodPosition == null || onSnake(newFoodPosition)||onBarrier(newFoodPosition)){
+        newFoodPosition = randomGridPosition();
+    }
+
+    return newFoodPosition;
+}
+
+// Po wykonaniu otrzymujemy nową pozycje jedzenia, a nastepnie jeśli ta nowa pozycja jest już na wężu otrzyma kolejnną pozycje kórej nie ma na wężu

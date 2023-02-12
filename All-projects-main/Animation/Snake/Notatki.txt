@@ -1,0 +1,26 @@
+
+Window.requestAnimationFrame() --> 
+
+Informuje przeglądarkę o zamiarze wykonania animacji i żąda od przeglądarki wywołania określonej funkcji w celu odświeżenia animacji przed następnym odmalowaniem. Argumentem metody jest funkcja (callback) do wywołania przed następnym odmalowaniem (odświeżeniem kanwy).
+
+
+
+Sprawdź dziwne funkcje jak to np 
+
+function main (currentTime){ 
+    window.requestAnimationFrame(main)
+    const secondsSinceLastRender = (currentTime - lastRenderTime) / 1000
+    if(secondsSinceLastRender < 1/snakeSpeed) return
+
+    console.log("Render")
+    lastRenderTime = currentTime;
+
+
+    update();
+    draw();
+
+}
+
+
+// Jak działa return 
+The return statement stops the execution of a function and returns a value.
